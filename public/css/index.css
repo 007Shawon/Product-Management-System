@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+a.fetch-btn {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+td img {
+    max-width: 80px;
+    height: auto;
+    display: block;
+}
+
+/* ✅ FIXED ACTIONS COLUMN */
+td.actions {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    gap: 10px;
+    white-space: nowrap;       /* prevent line break */
+}
+
+/* Buttons */
+.actions a,
+.actions button {
+    width: 70px;
+    height: 32px;              /* same height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Edit */
+.actions a {
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+}
+
+/* Delete */
+.actions button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+/* IMPORTANT: remove form spacing */
+.actions form {
+    margin: 0;
+}
+
+/* Toaster */
+.toaster {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+    z-index: 1000;
+    color: #fff;
+}
+
+.toaster.success {
+    background-color: #4CAF50;
+}
+
+.toaster.error {
+    background-color: #f44336;
+}
+
+.toaster.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-title i {
+    color: #4CAF50;
+}
+th, td {
+    border-bottom: none;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
